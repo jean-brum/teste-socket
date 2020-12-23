@@ -13,6 +13,6 @@ io.on('connection', (socket) => {
       });
   });
 
-http.listen(5000, function() {
+http.listen(process.env.PORT, function() {
     console.log("server is listening");
 });
